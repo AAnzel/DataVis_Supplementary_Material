@@ -14303,6 +14303,27 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;Aleksandar Anžel&#39;</span>
+<span class="n">__copyright__</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">__credits__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Aleksandar Anžel&#39;</span><span class="p">]</span>
+<span class="n">__license__</span> <span class="o">=</span> <span class="s1">&#39;GNU General Public License v3.0&#39;</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s1">&#39;1.0&#39;</span>
+<span class="n">__maintainer__</span> <span class="o">=</span> <span class="s1">&#39;Aleksandar Anžel&#39;</span>
+<span class="n">__email__</span> <span class="o">=</span> <span class="s1">&#39;aleksandar.anzel@uni-marburg.de&#39;</span>
+<span class="n">__status__</span> <span class="o">=</span> <span class="s1">&#39;Dev&#39;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Uncomment if you are using dark jupyter lab/notebook theme</span>
 <span class="c1">#alt.renderers.set_embed_options(theme=&#39;dark&#39;)</span>
 </pre></div>
@@ -14321,14 +14342,14 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For the purposes of introducing you to explorative data analysis, we will import 3 different data sets, among which two of them have categorical and one has continuous <em>target</em> variable.
-Through this notebook, we will only deal with one data set, named <em>data_wine</em>, which is a classic multi-class dataset. You should repeat explorative analysis with two other data sets. Since we are using the <em>pandas</em> library to handle data sets, we will use <em>data frame</em> and <em>data set</em> interchangeably.</p>
+<p>For the purposes of introducing you to exploratory data analysis, we will import 3 different data sets, among which two of them have categorical and one has continuous <em>target</em> variable.
+Through this notebook, we will only deal with one data set, named <em>data_wine</em>, which is a classic multi-class dataset. You should repeat exploratory analysis with two other data sets. Since we are using the <em>pandas</em> library to handle data sets, we will use <em>data frame</em> and <em>data set</em> interchangeably.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span> <span class="p">(</span><span class="n">as_frame</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">frame</span>
@@ -14350,7 +14371,7 @@ Through this notebook, we will only deal with one data set, named <em>data_wine<
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_wine</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14369,7 +14390,7 @@ Through this notebook, we will only deal with one data set, named <em>data_wine<
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -14514,7 +14535,7 @@ Through this notebook, we will only deal with one data set, named <em>data_wine<
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_wine</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -14575,7 +14596,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_wine</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14594,7 +14615,7 @@ memory usage: 19.6 KB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -14796,7 +14817,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_corr_chart</span> <span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -14839,7 +14860,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">chart_corr_wine</span> <span class="o">=</span> <span class="n">create_corr_chart</span> <span class="p">(</span><span class="n">data_wine</span><span class="p">)</span>
@@ -14859,18 +14880,18 @@ memory usage: 19.6 KB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-7f6174d1ab184949953585e5f898e5e0"></div>
+<div id="altair-viz-99e9dbb748394cce97f4c42cd4c22ffa"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7f6174d1ab184949953585e5f898e5e0") {
-      outputDiv = document.getElementById("altair-viz-7f6174d1ab184949953585e5f898e5e0");
+    if (outputDiv.id !== "altair-viz-99e9dbb748394cce97f4c42cd4c22ffa") {
+      outputDiv = document.getElementById("altair-viz-99e9dbb748394cce97f4c42cd4c22ffa");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14949,7 +14970,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_parallel_chart</span> <span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -14975,7 +14996,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We have to omit &#39;proline&#39; and &#39;magnesium&#39; columns because they skew up the resulting chart. Try without removing</span>
@@ -14996,18 +15017,18 @@ memory usage: 19.6 KB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-4cc143cfbaa24ae692f8cf99852de9ce"></div>
+<div id="altair-viz-97db29a81eda4f30a0bd1531b4cb31f6"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4cc143cfbaa24ae692f8cf99852de9ce") {
-      outputDiv = document.getElementById("altair-viz-4cc143cfbaa24ae692f8cf99852de9ce");
+    if (outputDiv.id !== "altair-viz-97db29a81eda4f30a0bd1531b4cb31f6") {
+      outputDiv = document.getElementById("altair-viz-97db29a81eda4f30a0bd1531b4cb31f6");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15068,7 +15089,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s see what happens if we scale data</span>
@@ -15092,7 +15113,7 @@ memory usage: 19.6 KB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
@@ -15231,7 +15252,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">chart_parallel_scaled_wine</span> <span class="o">=</span> <span class="n">create_parallel_chart</span> <span class="p">(</span><span class="n">scaled_data_wine</span><span class="o">.</span><span class="n">drop</span> <span class="p">([</span><span class="s1">&#39;proline&#39;</span><span class="p">,</span> <span class="s1">&#39;magnesium&#39;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>
@@ -15251,18 +15272,18 @@ memory usage: 19.6 KB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-7c6a73e1552a4dc4bbfd9bf876b00c2b"></div>
+<div id="altair-viz-b69f329cab764398ae435845bf420bfc"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7c6a73e1552a4dc4bbfd9bf876b00c2b") {
-      outputDiv = document.getElementById("altair-viz-7c6a73e1552a4dc4bbfd9bf876b00c2b");
+    if (outputDiv.id !== "altair-viz-b69f329cab764398ae435845bf420bfc") {
+      outputDiv = document.getElementById("altair-viz-b69f329cab764398ae435845bf420bfc");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15359,7 +15380,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_scatter_matrix</span> <span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -15390,7 +15411,7 @@ memory usage: 19.6 KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">chart_scatter_wine</span> <span class="o">=</span> <span class="n">create_scatter_matrix</span> <span class="p">(</span><span class="n">data_wine</span><span class="p">)</span>
@@ -15410,18 +15431,18 @@ memory usage: 19.6 KB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-db8486ffd3304203acb92b70303727a9"></div>
+<div id="altair-viz-fea17dc0a95b48678e4e32ac1ce9cc73"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-db8486ffd3304203acb92b70303727a9") {
-      outputDiv = document.getElementById("altair-viz-db8486ffd3304203acb92b70303727a9");
+    if (outputDiv.id !== "altair-viz-fea17dc0a95b48678e4e32ac1ce9cc73") {
+      outputDiv = document.getElementById("altair-viz-fea17dc0a95b48678e4e32ac1ce9cc73");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
